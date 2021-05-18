@@ -5,6 +5,7 @@
 	<title>Membuat CRUD Input Gambar</title>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
     <script src="<?=base_url('assets/ckeditor/ckeditor.js');?>"></script>
+    <script src="./node_modules/ckeditor4/ckeditor.js"></script>
 </head>
 <body style="width: 70%; margin: 0 auto; padding-top: 30px;">
 	<div class="row">
@@ -28,9 +29,9 @@
     			<div class="col-md-12">
     				<label>ISI BLOG</label>
     				<div class="form-group">
-                   		 <textarea name="isi" id="editor1"></textarea>
+                   		 <textarea name="isi" id="editor"></textarea>
                             <script>
-                                CKEDITOR.replace( 'editor1' );
+                                CKEDITOR.replace( 'editor' );
                             </script>
                 	</div>	
     			</div>
