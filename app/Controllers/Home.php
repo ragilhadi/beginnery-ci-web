@@ -6,6 +6,20 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('welcome_message');
+		return view('view_home');
+	}
+
+	public function class()
+	{
+		return view('view_class');
+	}
+
+	public function contact()
+	{
+		return view('view_contact');
+	}
+	public function actionContact()
+	{
+		return view('view_action_contact');
 	}
 }

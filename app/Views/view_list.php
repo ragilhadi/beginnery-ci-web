@@ -9,7 +9,7 @@
 	<div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>CRUD BERITA ARTIKEL</h2>
+                <h2>CRUD BERITA KELAS BEGINNERY</h2>
             </div>
         </div>
     </div>

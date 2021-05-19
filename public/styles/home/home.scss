@@ -1,0 +1,128 @@
+@import '../base.scss';
+
+
+
+.home-header {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-container {
+        width: 50%;
+    }
+}
+
+.huda-img {
+    width: 500px;
+    object-fit: contain;
+}
+
+.text-header {
+    font-size: 3rem;
+    font-weight:$bold;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
+.text-description {
+    font-size:1.25rem;
+    font-weight:$light;
+    margin-bottom: 2rem;
+}
+
+
+.welcome-container {
+    padding: 0 10%;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    .text-welcome-container {
+        width: 50%;
+
+        h2 {
+            font-size: 2rem;
+            font-weight:$bold;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .beginnery-img {
+        height: 320px;
+        object-fit: contain;
+    }
+}
+
+.class-container {
+    padding: 0 10%;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+
+    h2 {
+        font-size: 2rem;
+        font-weight:$bold;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size:1.15rem
+    }
+
+    .class-flexbox {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .class-card {
+            border-radius: 10px;
+            width: 47%;
+            box-shadow: $shadow-card;
+            margin-bottom: 3rem;
+
+            .coming-soon {
+                display:flex;
+                padding: 2rem;
+                align-items: center;
+                justify-content:center;
+                background-color: $grayColor;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                min-height: 200px;
+            }
+
+            .card-image {
+                display:flex;
+                padding: 2rem;
+                align-items: center;
+                justify-content:center;
+                background-color: $primaryColor;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                min-height: 200px;
+            }
+
+            .card-description {
+                padding: 3rem 5%;
+
+                h4 {
+                    font-size:1.5rem;
+                    font-weight:$semi-bold;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size:1.1rem;
+                    font-weight:$light;
+                    color: $textGray;
+                    margin-bottom: 2rem;
+                }
+            }
+
+        }
+
+    }
+}

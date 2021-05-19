@@ -1,0 +1,194 @@
+.nav-colored {
+  background-color: white;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+  height: 80px;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+
+.navbar .logo img {
+  width: 38px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navbar .links .link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-right: 2rem;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.navbar .links .link:visited {
+  color: #1C433A;
+}
+
+.navbar .links .link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: #1C433A;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar .links .link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar .links .link:last-child {
+  margin-right: 0;
+}
+
+.key {
+  color: #1C433A;
+}
+
+.notable {
+  background-color: black;
+  color: #F9F871;
+}
+
+.button-primary {
+  padding: 18px 0;
+  min-width: 220px;
+  background-color: #1C433A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  background-color: #326156;
+}
+
+.button-secondary {
+  padding: 18px 0;
+  min-width: 220px;
+  background-color: transparent;
+  color: #1C433A;
+  border: 2px solid #1C433A;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.button-secondary:hover {
+  cursor: pointer;
+  background-color: #326156;
+  color: white;
+}
+
+.button-disabled {
+  padding: 18px 0;
+  min-width: 220px;
+  background-color: #717372;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.button-disabled:hover {
+  cursor: not-allowed;
+  background-color: #464646;
+}
+
+.footer {
+  padding: 10% 10% 5%;
+  background-color: #1C433A;
+}
+
+.footer h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer .footer-wrapper {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.footer .logo img {
+  margin-right: 2rem;
+}
+
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+}
+
+.footer .social img {
+  width: 52px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=globalcss.css.map */

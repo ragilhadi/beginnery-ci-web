@@ -1,0 +1,159 @@
+@import 'base.scss';
+
+.nav-colored { background-color:white; }
+.nav-transparent { background-color:transparent;}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 80px;
+    width: 80%;
+    align-items: center;
+    position: fixed;
+    transition: background-color 500ms ease-in-out;
+
+
+    .logo {
+        img {
+            width: 38px;
+            object-fit: contain;
+        }
+    }
+    .links {
+        .link {
+            text-decoration: none;
+            font-size: 1.25rem;
+            margin-right: 2rem;
+            font-weight:$medium;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+
+            &:visited {
+                color: $primaryColor;
+            }
+
+            &:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 4px;
+                left: 50%;
+                position: absolute;
+                background: $primaryColor;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+              }
+              &:hover:after { 
+                width: 100%; 
+                left: 0; 
+              }
+
+            &:last-child {
+                margin-right:0;
+            }
+        }
+    }
+}
+
+.key {
+    color: $primaryColor;
+}
+
+.notable {
+    background-color: black;
+    color: $secondaryColor;
+}
+
+.button-primary {
+    padding: 18px 0;
+    min-width: 220px;
+    background-color: $primaryColor;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight:$semi-bold;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        background-color: #326156;
+    }
+}
+
+.button-secondary {
+    padding: 18px 0;
+    min-width: 220px;
+    background-color: transparent;
+    color: $primaryColor;
+    border: 2px solid $primaryColor;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight:$semi-bold;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        background-color: #326156;
+        color: white;
+    }
+}
+
+.button-disabled {
+    padding: 18px 0;
+    min-width: 220px;
+    background-color: $grayColor;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight:$semi-bold;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    &:hover {
+        cursor: not-allowed;
+        background-color: #464646;
+    }
+}
+
+.footer {
+    padding: 10% 10% 5%;
+    background-color: $primaryColor;
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: $bold;
+        margin-bottom: 1rem;
+        color: white;
+    }
+    .footer-wrapper {
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        color: white;
+
+        img {
+            margin-right: 2rem;
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+
+        img {
+            width: 52px;
+            object-fit: contain;
+        }
+    }
+}

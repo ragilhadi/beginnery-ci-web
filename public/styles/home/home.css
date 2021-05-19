@@ -1,0 +1,154 @@
+.home-header {
+  padding: 5% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-header .header-container {
+  width: 50%;
+}
+
+.huda-img {
+  width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.text-header {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+
+.text-description {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.welcome-container {
+  padding: 0 10%;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.welcome-container .text-welcome-container {
+  width: 50%;
+}
+
+.welcome-container .text-welcome-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-container .beginnery-img {
+  height: 320px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.class-container {
+  padding: 0 10%;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.class-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.class-container p {
+  font-size: 1.15rem;
+}
+
+.class-container .class-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.class-container .class-flexbox .class-card {
+  border-radius: 10px;
+  width: 47%;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+}
+
+.class-container .class-flexbox .class-card .coming-soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #717372;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 200px;
+}
+
+.class-container .class-flexbox .class-card .card-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1C433A;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 200px;
+}
+
+.class-container .class-flexbox .class-card .card-description {
+  padding: 3rem 5%;
+}
+
+.class-container .class-flexbox .class-card .card-description h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.class-container .class-flexbox .class-card .card-description p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #3d3d3d;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=home.css.map */

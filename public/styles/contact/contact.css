@@ -1,0 +1,116 @@
+.contact-container {
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #F9F871;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container .contact-description {
+  width: 45%;
+}
+
+.contact-container .contact-description h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-container .contact {
+  margin-top: 2rem;
+}
+
+.contact-container .contact .contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-container .contact .contact-flex p {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.contact-container .contact .contact-flex img {
+  margin-right: 1.5rem;
+  width: 48px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contact-container .contact-form {
+  width: 40%;
+  background-color: white;
+  padding: 5%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .contact-form label {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-container .contact-form input {
+  margin-bottom: 2rem;
+  padding: 8px 16px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.contact-container textarea {
+  margin: auto;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  resize: none;
+  overflow: auto;
+}
+
+.container-wrapper {
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #F9F871;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container-wrapper h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.container-wrapper p {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+/*# sourceMappingURL=contact.css.map */
