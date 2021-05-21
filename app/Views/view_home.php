@@ -22,6 +22,12 @@
             <a class="link" href="/">Home</a>
             <a class="link" href="/home/class">Class</a>
             <a class="link" href='/home/contact'>Contact Us</a>
+            <?php if (logged_in()) : ?>
+                <a class="link" href='/blog'>Dashboard</a>
+                <a class="link" href='/logout'>Logout</a>
+            <?php else: ?>
+                <a class="link" href='/login'>Login</a>
+            <?php endif; ?>
         </div>
     </nav>
     <div class="home-header">

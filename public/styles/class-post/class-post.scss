@@ -1,0 +1,71 @@
+@import '../base.scss';
+
+.class-wrapper {
+    padding: 14% 10% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondaryColor;
+
+    .text-wrapper {
+        width: 45%;
+
+        h1 {
+            font-weight: $bold;
+            font-size: 3rem;
+            color: $primaryColor;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    img {
+        object-fit: contain;
+        width: 200px;
+    }
+}
+
+.sub-title {
+    padding: 0 10%;
+    font-weight: $semi-bold;
+    font-size: 2.25rem;
+    color: $primaryColor;
+    margin-top: 5%;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0 5%;
+    padding: 0 10%;
+    text-decoration: none;
+    color: $primaryColor;
+
+    .post-container {
+        border: 1px solid $primaryColor;
+        border-radius: 10px;
+        padding: 3% 5%;
+        margin: 1rem 0;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #FFFFC1;
+        }
+
+        h4 {
+            font-weight: $semi-bold;
+            font-size: 1.5rem;
+            color: $primaryColor;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-weight: $light;
+        }
+    }
+}
+
+.wrapper-post {
+    text-decoration: none;
+    
+}

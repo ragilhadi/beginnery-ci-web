@@ -16,6 +16,18 @@ class Blog extends BaseController
         }
     }
 
+    public function designCycle()
+    {
+        $model = new ModelsBlog();
+        if (!$this->validate([]))
+        {
+            $data['validation'] = $this->validator;
+            $data['artikel'] = $model->getArtikel();
+            return view('view_class_design',$data);
+        }
+    }
+
+
     public function form(){
         helper('form');
         return view('view_form');
@@ -25,6 +37,12 @@ class Blog extends BaseController
         $model = new ModelsBlog();
         $data['artikel'] = $model->PilihBlog($id)->getRow();
         return view('view',$data);
+    }
+
+    public function post($id){
+        $model = new ModelsBlog();
+        $data['artikel'] = $model->PilihBlog($id)->getRow();
+        return view('view_post',$data);
     }
 
     public function simpan(){
