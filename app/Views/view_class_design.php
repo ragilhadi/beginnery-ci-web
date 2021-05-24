@@ -22,6 +22,17 @@
             <a class="link" href="/">Home</a>
             <a class="link" href="/home/class">Class</a>
             <a class="link" href='/home/contact'>Contact Us</a>
+            <?php if (logged_in()) : ?>
+                <?php if(in_groups('user')) : ?>
+                <a class="link" href='/blog/dashboard'>Dashboard</a>
+                <?php endif; ?>
+                <?php if(in_groups('admin')) : ?>
+                <a class="link" href='/blog/admin'>Dashboard</a>
+                <?php endif; ?>
+                <a class="link" href='/logout'>Logout</a>
+            <?php else: ?>
+                <a class="link" href='/login'>Login</a>
+            <?php endif; ?>
         </div>
     </nav>
 
@@ -31,7 +42,7 @@
                         Design Cycle
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt assumenda vel consequuntur accusantium, optio autem.
+                    Kelas design grafis untuk anda yang tertarik belajar design grafis, atau kalian yang memiliki usaha tetapi belum mengerti cara bikin logo,  kemasan dan pemasaran menarik.
                     </p>
                 </div>
             <img src='<?=base_url('src/img/graphicCycle.png');?>' alt='class-img' class="classes-img" />

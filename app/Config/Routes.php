@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/blog', 'Blog::index');
+$routes->get('/blog/admin', 'Blog::admin', ['filter' => 'role:admin']);
+$routes->get('/blog/form', 'Blog::form', ['filter' => 'role:admin']);
 
 /*
  * --------------------------------------------------------------------

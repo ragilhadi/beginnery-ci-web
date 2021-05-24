@@ -22,4 +22,8 @@ class Home extends BaseController
 	{
 		return view('view_action_contact');
 	}
+	public function designClass()
+	{
+		return view('view_class_detail');
+	}
 }

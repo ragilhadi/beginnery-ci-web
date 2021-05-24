@@ -10,7 +10,7 @@
 	<div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>CRUD BERITA ARTIKEL</h2>
+                <h2>Edit Content </h2>
             </div>
         </div>
     </div>
@@ -27,12 +27,9 @@
                 	</div>	
     			</div>
     			<div class="col-md-12">
-    				<label>ISI BLOG</label>
+    				<label>Description</label>
     				<div class="form-group">
-                   		 <textarea name="isi" id="editor1"><?=$artikel->isi?></textarea>
-                            <script>
-                                CKEDITOR.replace( 'editor1' );
-                            </script>
+                   		 <textarea name="isi" class="form-control"></textarea>
                 	</div>	
     			</div>
                 <div class="col-md-12">

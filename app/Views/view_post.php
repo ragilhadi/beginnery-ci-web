@@ -22,6 +22,17 @@
             <a class="link" href="/">Home</a>
             <a class="link" href="/home/class">Class</a>
             <a class="link" href='/home/contact'>Contact Us</a>
+            <?php if (logged_in()) : ?>
+                <?php if(in_groups('user')) : ?>
+                <a class="link" href='/blog/dashboard'>Dashboard</a>
+                <?php endif; ?>
+                <?php if(in_groups('admin')) : ?>
+                <a class="link" href='/blog/admin'>Dashboard</a>
+                <?php endif; ?>
+                <a class="link" href='/logout'>Logout</a>
+            <?php else: ?>
+                <a class="link" href='/login'>Login</a>
+            <?php endif; ?>
         </div>
     </nav>
 

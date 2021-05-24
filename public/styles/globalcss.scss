@@ -157,3 +157,57 @@
         }
     }
 }
+
+.navbar-not-conflict {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    transition: background-color 500ms ease-in-out;
+
+
+    .logo {
+        img {
+            width: 38px;
+            object-fit: contain;
+        }
+    }
+    .links {
+        .link {
+            text-decoration: none;
+            font-size: 1.25rem;
+            margin-right: 2rem;
+            font-weight:$medium;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+
+            &:visited {
+                color: $primaryColor;
+            }
+
+            &:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 4px;
+                left: 50%;
+                position: absolute;
+                background: $primaryColor;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+              }
+              &:hover:after { 
+                width: 100%; 
+                left: 0; 
+              }
+
+            &:last-child {
+                margin-right:0;
+            }
+        }
+    }
+}

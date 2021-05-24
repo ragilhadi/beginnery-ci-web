@@ -191,4 +191,65 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+.navbar-not-conflict {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+  height: 80px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+
+.navbar-not-conflict .logo img {
+  width: 38px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navbar-not-conflict .links .link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-right: 2rem;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.navbar-not-conflict .links .link:visited {
+  color: #1C433A;
+}
+
+.navbar-not-conflict .links .link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: #1C433A;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-not-conflict .links .link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-not-conflict .links .link:last-child {
+  margin-right: 0;
+}
 /*# sourceMappingURL=globalcss.css.map */

@@ -12,7 +12,18 @@ class Blog extends BaseController
         {
             $data['validation'] = $this->validator;
             $data['artikel'] = $model->getArtikel();
-            return view('view_list',$data);
+            return view('view_admin',$data);
+        }
+    }
+
+    public function admin()
+    {
+        $model = new ModelsBlog();
+        if (!$this->validate([]))
+        {
+            $data['validation'] = $this->validator;
+            $data['artikel'] = $model->getArtikel();
+            return view('view_admin',$data);
         }
     }
 
@@ -25,6 +36,11 @@ class Blog extends BaseController
             $data['artikel'] = $model->getArtikel();
             return view('view_class_design',$data);
         }
+    }
+
+    public function dashboard(){
+        helper('form');
+        return view('view_dashboard');
     }
 
 

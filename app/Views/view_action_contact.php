@@ -13,17 +13,28 @@
             <link rel="stylesheet" href="styles/contact/contact.css"> -->
         </head>
         <body>
-            <nav class="navbar" id="nav">
-                <div class="logo">
-                    <img src='<?=base_url('src/icon/beginnery_icon.png');?>' class='icon' alt='beginnery_icon' />
-                    <!-- <img src='src/icon/beginnery_icon.png' class='icon' alt='beginnery_icon' /> -->
-                </div>
-                <div class="links">
-                    <a class="link" href="/">Home</a>
-                    <a class="link" href="/home/class">Class</a>
-                    <a class="link" href='/home/contact'>Contact Us</a>
-                </div>
-            </nav>
+        <nav class="navbar" id="nav">
+            <div class="logo">
+                <img src='<?=base_url('src/icon/beginnery_icon.png');?>' class='icon' alt='beginnery_icon' />
+                <!-- <img src='src/icon/beginnery_icon.png' class='icon' alt='beginnery_icon' /> -->
+            </div>
+            <div class="links">
+                <a class="link" href="/">Home</a>
+                <a class="link" href="/home/class">Class</a>
+                <a class="link" href='/home/contact'>Contact Us</a>
+                <?php if (logged_in()) : ?>
+                    <?php if(in_groups('user')) : ?>
+                    <a class="link" href='/blog/dashboard'>Dashboard</a>
+                    <?php endif; ?>
+                    <?php if(in_groups('admin')) : ?>
+                    <a class="link" href='/blog/admin'>Dashboard</a>
+                    <?php endif; ?>
+                    <a class="link" href='/logout'>Logout</a>
+                <?php else: ?>
+                    <a class="link" href='/login'>Login</a>
+                <?php endif; ?>
+            </div>
+        </nav>
 
             <div class="container-wrapper">
                 <div>
